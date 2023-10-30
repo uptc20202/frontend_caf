@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  selectedButton: string = '';
 
+  toggleForms(button: string): void {
+    this.selectedButton = button;
+  }
 }

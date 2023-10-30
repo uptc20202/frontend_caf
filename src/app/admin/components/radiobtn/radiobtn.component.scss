@@ -1,0 +1,24 @@
+.button-container {
+}
+
+.sub-button {
+  background-color: #C59B2D;
+  color: #000000;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+}
+
+
+
+.sub-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.sub-button:focus {
+  outline: none;
+}

@@ -1,0 +1,38 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 20px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sub-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 7px 20px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sub-button.selected {
+  background-color: #C59B2D;
+  color: #000000;
+}
+
+.sub-button:hover {
+  background-color: #C59B2D;
+}
+
+.sub-button:focus {
+  outline: none;
+}

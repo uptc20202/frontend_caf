@@ -1,1 +1,6 @@
-<p>btn-double-selection works!</p>
+<div class="button-container">
+  <button class="main-button">
+    <button class="sub-button" (click)="selectButton('Ingreso')" [class.selected]="selectedButton === 'Ingreso'">Ingreso</button>
+    <button class="sub-button" (click)="selectButton('Registro')" [class.selected]="selectedButton === 'Registro'">Registro</button>
+  </button>
+</div>
