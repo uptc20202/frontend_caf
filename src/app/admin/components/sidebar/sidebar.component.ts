@@ -11,14 +11,21 @@ export class SidebarComponent {
   @Input() gym_email: string = 'email.gym@email.com';
 
   @Output() buttonClicked: EventEmitter<boolean> = new EventEmitter<boolean>();
+  @Output() buttonView = new EventEmitter<string>();
 
   constructor(private router: Router) {}
 
   isCollapsed: boolean = true;
+  selectedButton: string | null = null;
 
   toggleCollapse() {
   this.isCollapsed = !this.isCollapsed;
   this.buttonClicked.emit(this.isCollapsed);
+  }
+
+  selectButton(button: string): void {
+    this.selectedButton = button;
+    this.buttonView.emit(button);
   }
 
 }

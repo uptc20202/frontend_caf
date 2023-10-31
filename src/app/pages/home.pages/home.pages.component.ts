@@ -9,10 +9,15 @@ export class HomePagesComponent {
 
   dashboardWidth: string = '96%';
   sidebarWidth: string = '4%';
+  selectedButton: string = '';
 
   toggleCollapse(isCollapsed: boolean) {
     this.dashboardWidth = isCollapsed ? '96%' : '85%';
     this.sidebarWidth = isCollapsed ? '4%' : '15%';
+  }
+
+  toggleForms(button: string): void {
+    this.selectedButton = button;
   }
 
 }

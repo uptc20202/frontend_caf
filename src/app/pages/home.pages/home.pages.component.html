@@ -1,8 +1,8 @@
 <div class="main_box">
 
-  <app-sidebar [style.width]="sidebarWidth" (buttonClicked)="toggleCollapse($event)"></app-sidebar>
+  <app-sidebar [style.width]="sidebarWidth" (buttonClicked)="toggleCollapse($event)" (buttonView)="toggleForms($event)"></app-sidebar>
 
-  <div class="sub_main_box home" [style.width]="dashboardWidth" hidden="true">
+  <div class="sub_main_box home" [hidden]="selectedButton !== 'home'" [style.width]="dashboardWidth" hidden="true">
 
     <div class="top_bar" >
       <app-notifications class="app-notifications"></app-notifications>
@@ -23,7 +23,7 @@
 
   </div>
 
-  <div class="sub_main_box workouts_management" [style.width]="dashboardWidth" >
+  <div class="sub_main_box workouts_management" [hidden]="selectedButton !== 'workouts'" [style.width]="dashboardWidth" hidden="true">
 
     <div class="top_bar" >
       <app-notifications class="app-notifications"></app-notifications>
@@ -39,11 +39,13 @@
 
   </div>
 
-  <div class="sub_main_box users_management" [style.width]="dashboardWidth" hidden="true">
+  <div class="sub_main_box users_management" [hidden]="selectedButton !== 'users'" [style.width]="dashboardWidth" >
 
     <div class="top_bar" >
       <app-notifications class="app-notifications"></app-notifications>
     </div>
+
+    <app-users-management class="dashboard"></app-users-management>
 
   </div>
 

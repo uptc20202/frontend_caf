@@ -19,6 +19,8 @@ import { WorkoutsWidgetComponent } from './admin/components/workouts-widget/work
 import { NotificationsComponent } from './admin/components/notifications/notifications.component';
 import { MotivationalQuotesService } from './api/services/motivational-quotes.service';
 import { WorkoutsCardComponent } from './admin/components/workouts-card/workouts-card.component';
+import { UserCardComponent } from './admin/components/user-card/user-card.component';
+import { UsersManagementComponent } from './admin/components/users-management/users-management.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { WorkoutsCardComponent } from './admin/components/workouts-card/workouts
     ClientsWidgetComponent,
     WorkoutsWidgetComponent,
     NotificationsComponent,
-    WorkoutsCardComponent
+    WorkoutsCardComponent,
+    UserCardComponent,
+    UsersManagementComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,21 +5,21 @@
     <a><img src="../../../assets/sidebar/menu.png"></a>
   </button>
 <!--Espacio entre menu desplegar y opciones menú-->
-  <div class="options_menu" >
+  <div class="options_menu">
     <button class="icon_dashboard">
-      <a><img src="../../../assets/sidebar/dashboard.png"></a>
+      <a><img src="../../../assets/sidebar/dashboard.png" (click)="selectButton('home')"></a>
     </button>
 
-    <button class="icon_edit_workouts">
+    <button class="icon_edit_workouts" (click)="selectButton('workouts')">
       <a><img src="../../../assets/sidebar/edit.png"></a>
     </button>
 
-    <button class="icon_edit_user">
+    <button class="icon_edit_user" (click)="selectButton('users')">
       <a><img src="../../../assets/sidebar/notebook.png"></a>
     </button>
   </div>
 <!--Espacio entre opciones menú y salir-->
-  <button class="icon_exit">
+  <button class="icon_exit" (click)="selectButton('exit')">
     <a><img src="../../../assets/sidebar/exit.png"></a>
   </button>
 
@@ -32,33 +32,33 @@
   </button>
 
   <div class="user_space">
-    <a href=""><img src="../../../assets/sidebar/user.png" alt=""></a>
-    <a href=""><p>{{ gym_name }}</p></a>
-    <a href=""><p>{{ gym_email }}</p></a>
+    <a ><img src="../../../assets/sidebar/user.png" alt=""></a>
+    <a ><p>{{ gym_name }}</p></a>
+    <a ><p>{{ gym_email }}</p></a>
   </div>
 
   <!--Espacio entre menu desplegar y opciones menú-->
   <div class="options_menu" >
 
-    <button class="icon_dashboard">
+    <button (click)="selectButton('home')" class="icon_dashboard">
       <a><img src="../../../assets/sidebar/dashboard.png"></a>
-      <a href=""><p>Inicio</p></a>
+      <a ><p>Inicio</p></a>
     </button>
 
-    <button class="icon_edit_workouts">
+    <button (click)="selectButton('workouts')" class="icon_edit_workouts">
       <a><img src="../../../assets/sidebar/edit.png"></a>
-      <a href=""><p>Gestionar Rutinas</p></a>
+      <a ><p>Gestionar Rutinas</p></a>
     </button>
 
-    <button class="icon_edit_user">
+    <button (click)="selectButton('users')" class="icon_edit_user">
       <a><img src="../../../assets/sidebar/notebook.png"></a>
-      <a href=""><p>Gestionar Usuarios</p></a>
+      <a ><p>Gestionar Usuarios</p></a>
     </button>
   </div>
 <!--Espacio entre opciones menú y salir-->
-  <button class="icon_exit">
+  <button (click)="selectButton('exit')" class="icon_exit">
     <a><img src="../../../assets/sidebar/exit.png"></a>
-    <a href=""><p>Cerrar Sesion</p></a>
+    <a ><p>Cerrar Sesion</p></a>
   </button>
 
 </div>
