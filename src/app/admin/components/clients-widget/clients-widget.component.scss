@@ -1,0 +1,49 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+div {
+  width: 90%;
+  box-shadow: 10px 10px 25px -5px rgba(0, 0, 0, 0.5); /* Sombra con ángulo de 155 grados */
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+
+  margin-top: 30px;
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+  max-height: 50vh;
+}
+
+p.Title {
+  font-weight: 1000;
+  font-size: 16px;
+}
+
+.client_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.client_table img{
+  width: 18px;
+}
+
+
+.client_table th, .client_table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.client_table th {
+  background-color: #f2f2f2;
+}
+
+.client_table button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

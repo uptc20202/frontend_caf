@@ -1,0 +1,59 @@
+body {
+  margin: 0px;
+  background: #ECE9E9;
+}
+
+.top_bar {
+  position: relative;
+}
+
+.app-notifications {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 6px 0px 0px;
+}
+
+
+.main_box{
+  display: flex;
+  width: 100%;
+}
+
+.top_bar{
+  margin-top: 10px;
+  width: 100%;
+}
+
+.dashboard{
+  display: flex;
+}
+
+.left_space{
+  width: 80%;
+}
+
+.right_space{
+  width: 20%;
+}
+
+.workouts-card{
+  width: 20%;
+
+  margin: 10px 2.5% 0px 2.5%;
+}
+
+.add_card {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img_add {
+  /* Ajusta el tamaño máximo de la imagen si es necesario */
+  max-width: 100%;
+  max-height: 100%;
+  width: 70px;
+}

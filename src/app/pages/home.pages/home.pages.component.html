@@ -1,0 +1,50 @@
+<div class="main_box">
+
+  <app-sidebar [style.width]="sidebarWidth" (buttonClicked)="toggleCollapse($event)"></app-sidebar>
+
+  <div class="sub_main_box home" [style.width]="dashboardWidth" hidden="true">
+
+    <div class="top_bar" >
+      <app-notifications class="app-notifications"></app-notifications>
+    </div>
+
+    <div class="dashboard" >
+
+      <div class="left_space">
+        <app-phrases></app-phrases>
+        <app-clients-widget></app-clients-widget>
+      </div>
+
+      <div class="right_space">
+        <app-workouts-widget></app-workouts-widget>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="sub_main_box workouts_management" [style.width]="dashboardWidth" >
+
+    <div class="top_bar" >
+      <app-notifications class="app-notifications"></app-notifications>
+    </div>
+
+    <div class="dashboard" >
+      <app-workouts-card class="workouts-card"></app-workouts-card>
+
+      <div class="workouts-card add_card">
+        <a><img class="img_add" src="../../assets/home/add-button.png" alt=""></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sub_main_box users_management" [style.width]="dashboardWidth" hidden="true">
+
+    <div class="top_bar" >
+      <app-notifications class="app-notifications"></app-notifications>
+    </div>
+
+  </div>
+
+</div>

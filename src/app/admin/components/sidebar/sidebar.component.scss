@@ -1,0 +1,97 @@
+
+
+body {
+  margin: 0px;
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+
+}
+
+.hidden {
+  display: none !important;
+}
+
+button{
+  background: #cccaca;
+  border: none;
+  padding: 10px 0px 10px 0px; /* Adjust as needed */
+  text-align: center;
+}
+
+.sidebar {
+  background-color: #cccaca;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.expand_bar {
+  width: 100%;
+}
+
+.collapse_bar{
+  width: 100%; /* Adjust as needed */
+}
+
+.sidebar button{
+  width: 90%;
+}
+
+.expand_bar button{
+  display: flex;
+  align-items: center;
+}
+
+.user_space{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user_space p{
+  margin-top: 6px;
+  margin-bottom: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.expand_bar button *{
+  margin: 0 6px 0 6px;
+}
+
+.collapse_bar img{
+  width: 18px;
+}
+
+button:hover {
+  background-color: #7a7b80;
+  border: none;
+  border-radius: 20px;
+}
+
+.expand_bar {
+  /* Add styles for the expanded bar if needed */
+}
+
+.icon_menu{
+  margin-top: 10px;
+}
+
+.options_menu{
+  margin-top: 22vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon_exit {
+  margin-top: auto; /* Esto llevará icon_exit a la parte más baja de la pantalla */
+}
